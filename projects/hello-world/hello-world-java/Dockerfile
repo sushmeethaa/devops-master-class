@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /home/app
 COPY . /home/app/
-mvn clean package
+run mvn clean package
 # Create an Image
 FROM eclipse-temurin:17-jdk-alpine
 EXPOSE 7000
